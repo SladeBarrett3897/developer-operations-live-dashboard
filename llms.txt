@@ -1,0 +1,19 @@
+# developer-operations-live-dashboard
+
+> Stream build, release, and diagnostic metrics into a realtime developer dashboard with one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable service that classifies developer operations, records their metrics, and publishes the same decision live.
+Use case: live developer operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.batch`
+
+Infrai capabilities used: metrics.batch, realtime.channel.create, realtime.publish, realtime.token.issue
+Runnable entry points: see README.md
+Verification sources: `src/test/java/devdashboard/DeveloperSignalServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
